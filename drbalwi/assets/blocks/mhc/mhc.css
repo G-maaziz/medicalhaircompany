@@ -1,0 +1,720 @@
+.bg-image {
+    background-position: 25% 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 220px;
+    border-radius: 0% 0% 255% 255% / 0% 0% 268% 268%;
+}
+
+h1{
+    font-size: 28px;
+}
+p{
+    line-height: 23px;
+}
+
+section {
+    padding: 0;
+}
+
+.hero-section {
+    position: relative;
+}
+
+h1 span {
+    color: #33CCCC;
+}
+
+section.hero-section img {
+    max-width: 220px;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.navbar{
+    background-color:#F6F6F8;
+}
+
+.navbar .menu-item>a{
+    color: #064584;
+}
+img.cardLogo {
+    position: absolute;
+    left: -8%;
+    transform: rotate(-90deg) translate(20%, -50%);
+    padding: 10px 15px;
+    max-width: 100px;
+    border-radius: 10px;
+    width: 100%;
+    top: 50%;
+}
+.relative {
+    position: relative;
+}
+
+.cards .card:nth-child(1) .cardLogo{
+    background: #2569A8;
+}
+
+.cardBody {
+    position: relative;
+    /* padding: 56px; */
+    overflow: visible;
+    /* border-radius: 15px; */
+}
+
+.cards .card:nth-child(2) .cardLogo{
+     background: #093165;
+    width:100%
+}
+.cards .card:nth-child(3) .cardLogo{
+background:#2A4CC7;
+}
+.cards .card:nth-child(4) .cardLogo{
+     background: #005A63;
+     padding: 0 4px;
+     left: -6%;
+}
+.cards .card:nth-child(1) h3 {
+    color: #2569A8;
+}
+
+.cards .card:nth-child(2) h3 {
+    color: #093165;
+}
+
+.cards .card:nth-child(3) h3 {
+    color: #2A4CC7;
+}
+
+.cards .card:nth-child(4) h3 {
+    color: #005A63;
+}
+
+
+.section-image{
+    max-width: 450px;
+    width: 100%;
+}
+
+@media(min-width:768px) {
+    .bg-image {
+        display: none;
+    }
+    section.unsere-partner {
+        padding-bottom: 40px;
+    }
+    
+    section.unsere-partner {
+        margin: 0;
+    }
+    section.hero-section {
+        padding: 20px 0;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        display: none;
+    }
+    .bg-image {
+        min-height: 510px;
+        border-radius: 0 50% 50% 0;
+    }
+    .articles-images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    border-radius: 50%;
+    background: #BCBCBC;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+.swiper-slide img {
+    border-radius: 40px;
+}
+
+.unsere-partner p.title {
+    font-size: 22px;
+    color: #333333;
+}
+
+section.unsere-partner {
+    margin: 70px 0;
+}
+
+.swiper-slide h3 {
+    text-align: center;
+    color: #064584;
+}
+
+.swiper-slide p {
+    text-align: center;
+}
+
+
+
+p,
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+}
+
+.article-images img {
+    max-width: 160px;
+}
+
+.article-images {
+    text-align: center;
+}
+
+section.cards-section {
+    margin: 40px 0 70px;
+}
+/* section.unsere-partner {
+    padding-bottom: 40px;
+} */
+
+section.cards-section p {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+section.articles {
+    text-align: center;
+    background: #F7F7FA;
+    padding: 50px 0;
+}
+section.articles img {
+    border-radius: 30px;
+}
+.articles button {
+    background: #33CCCC;
+    margin: auto;
+    display: block;
+    font-size: 22px;
+    color: #F7F7F7;
+    border-radius: 30px;
+    padding: 0;
+    min-height: 60px;
+    margin-top: 30px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 4%;
+    flex-wrap: wrap;
+}
+
+.card {
+    text-align: center;
+    width: 48%;
+}
+
+.cardBody {
+    background: #F7F7FA;
+    border-radius: 30px;
+    /* overflow: hidden; */
+}
+
+.cardBody img.cardImage {
+    border-radius: 30px;
+    display: block;
+}
+
+.cardContent {
+    padding: 20px;
+}
+
+.cardContent p {
+    --max-line: 2;
+    --line-height: 1.4;
+    max-height: calc(var(--max-line) * 16px * var(--line-height));
+    line-height: var(--line-height);
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    transition: 0.75s;
+}
+
+input.plusMinus {
+    appearance: none;
+    border: none !important;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+input.plusMinus::before,
+input.plusMinus::after {
+    content: "";
+    width: 24px;
+    height: 3px;
+    background: #8E8E8E;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input.plusMinus::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+    transition: 0.75s;
+}
+
+input.plusMinus:checked::after {
+    transform: translate(-50%, -50%);
+}
+
+.cardContent p:has(+ input.plusMinus:checked) {
+    max-height: 500px;
+}
+
+h3 {
+    font-size: 22px;
+    color: #343434;
+    font-weight: 800;
+}
+
+.cards h3 {
+    color: #2A4CC7;
+    margin: 20px 0 10px;
+}
+
+footer {
+    display: none;
+}
+
+.footer-logo .logo {
+    max-width: 212px;
+    margin: auto;
+}
+
+.links {
+    display: flex;
+    margin: 30px auto 20px;
+    justify-content: center;
+    gap: 15px;
+}
+
+.links a {
+    color: #333333;
+}
+
+
+/********form*****************/
+
+.wrapper {
+    margin: 0 14px;
+    box-shadow: 0 4px 8px #0000004d;
+    border-radius: 28px;
+    border: 1px solid #fff;
+    background-color: #ebebeb;
+}
+
+.wrapper textarea {
+    width: 100%;
+    height: 80px;
+}
+
+@media only screen and (min-width:768px) {
+    .wrapper {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.main-swiper .header {
+    background-color: #064584;
+    color: #fff;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    padding: 22px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 500;
+    text-align: center;
+}
+
+.main-swiper .inner {
+    background-color: #ebebeb;
+    border-top: 0;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+    padding: 30px 30px 60px;
+}
+
+.primary-btn,
+.secure {
+    justify-content: center;
+}
+
+.primary-btn {
+    height: 60px;
+    width: 100%;
+    max-width: 300px;
+    margin: 30px auto 20px;
+    background-color: #064584;
+    color: #fff;
+    border-radius: 35px;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0;
+}
+
+.secure {
+    gap: 15px;
+    list-style: none;
+    font-size: 12px;
+    color: #969699;
+}
+
+.secure,
+.secure li {
+    display: flex;
+    align-items: center;
+}
+
+label.policy.error {
+    max-width: 300px;
+    margin: auto;
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.secure li img {
+    width: 18px;
+    margin-right: 5px;
+    top: 1px;
+}
+
+.input-list {
+    display: grid;
+    gap: 15px;
+}
+
+.input-list .input-box,
+.secure li img {
+    position: relative;
+}
+
+.input-list .input-box .input-box_inner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-list .input-box .title {
+    font-size: 16px;
+    color: #525252;
+    margin-bottom: 7px;
+}
+
+.input-list .input-box input:not(.gender) {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 12px;
+    height: 54px;
+    padding-left: 64px;
+    padding-right: 15px;
+    font-size: 16px;
+    background-repeat: no-repeat;
+    background-position: left 22px center;
+    border: 1px solid transparent;
+}
+
+.input-list .input-box input[name=name] {
+    background-image: url(https://drpigment.de/wp-content/themes/drpigment/contact/assets/images/input-name.svg);
+}
+
+.input-list .input-box input[name=email] {
+    background-image: url(https://drpigment.de/wp-content/themes/drpigment/contact/assets/images/input-mail.svg);
+}
+
+.input-list .input-box input[name=phone] {
+    background-image: url(https://drpigment.de/wp-content/themes/drpigment/contact/assets/images/input-phone.svg);
+}
+
+.input-list .input-box select {
+    background-color: #fff;
+    border-radius: 12px;
+    height: 54px;
+    padding-left: 10px;
+    width: 110px;
+}
+
+.input-list .policy {
+    margin-top: 20px;
+    position: relative;
+    padding-left: 32px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #525252;
+    cursor: pointer;
+}
+
+.input-list .policy a {
+    color: #33a4ff;
+    text-decoration: underline;
+}
+
+.input-list .policy input {
+    position: absolute;
+    opacity: 0;
+}
+
+.input-list .policy input:checked~.checkmark::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 4px;
+    background-color: #ff524d;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input-list .policy .checkmark {
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+    border: 1px solid #707070;
+    border-radius: 6px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.d-flex label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-list .input-box input[type="radio"] {
+    width: 24px;
+    accent-color: #ff524d;
+    height: 24px;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+.inp_icon img {
+    position: absolute;
+    z-index: 90;
+    right: 6px;
+    top: 20px;
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-size: cover;
+    background-position: center;
+    cursor: text;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.policy .inp_icon>img {
+    top: 0;
+}
+
+.policy {
+    max-width: 300px;
+    margin: auto;
+    display: flex;
+    align-items: baseline;
+    font-size: 12px;
+    line-height: 18px;
+    gap: 5px;
+}
+
+.no-scroll-menu {
+    position: absolute;
+    top: 10px;
+    color: white;
+    display: flex;
+    gap: 25px;
+    width: 100%;
+    justify-content: center;
+}
+.articles .container > h3 {
+    margin-top: 0;
+}
+
+/**************/
+
+@media(max-width:767px) {
+    #hamburger>div{
+        background-color:#064584 ;
+    }
+    #hamburger>div::before{
+        background-color:#064584 ;
+    }
+    
+    #hamburger>div::after{
+    background-color:#064584 ;
+    }
+    
+    .navbar .menu{
+        background-color: #064584;
+    }
+    
+    .navbar .menu-item>a{
+        color:white;
+    }
+    
+    .article-images h4 {
+        margin: 0;
+    }
+
+    .navbar .menu-item>a{
+        padding-bottom: 0;
+    }
+    section.articles .container > h3 {
+        margin-top: 0;
+    }
+    div.article-images {
+        margin-bottom: 40px;
+    }
+    
+    .article-images p {
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+    .cards .card:nth-child(4) .cardLogo{
+        background: #005A63;
+        padding: 0 4px;
+        left: -8%;
+   }
+   div.article-images {
+    margin-bottom: 40px;
+}
+
+    .swiper-button-next, .swiper-button-prev{
+        top: 23%;
+    }
+    .hero-text {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .sticky-nav{
+        transform: translateY(-70px);
+        transition: 1s;
+        position: fixed;
+    }
+    .show{
+        transform: translateY(0);
+        transition: 1s;
+    }
+    img.logo {
+        display: block;
+        max-width: 230px;
+        margin: auto;
+    }
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    .card {
+        width: 100%;
+        max-width: 450px;
+        margin: auto;
+    }
+    h1.text {
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 20px;
+        padding-top: 70px;
+    }
+    .logo img {
+        height: 42px;
+        width: auto;
+    }
+    section.unsere-partner {
+        margin: 20px 0 30px;
+    }
+    section.articles {
+        padding: 40px 0;
+        background: #F7F7FA;
+    }
+    .main-swiper .inner {
+        padding: 30px 15px;
+    }
+    .input-list .input-box select {
+        width: 80px;
+        font-size: 12px;
+        padding-left: 3px;
+        border: none;
+    }
+    .input-list .input-box input:not(.gender) {
+        padding-left: 40px;
+        background-position: left 12px center;
+    }
+    .form-contact .container {
+        padding: 0 10px;
+    }
+    .unsere-partner .container {
+        padding: 0 30px;
+    }
+}
+@media(min-width:767px) {
+section.unsere-partner {
+    margin: 0;
+}
+.no-scroll-menu {
+    display: none;
+}
+}
+
+@media(max-width:520px){
+    .card {
+        max-width:330px;
+    }
+}
+
+@media(max-width:990px){
+    .cards .card:nth-child(4) .cardLogo{
+        left:-8%;
+    }
+}
+

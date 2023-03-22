@@ -1,0 +1,1 @@
+<div class="separator" style="margin: <?php echo(empty(get_field("margin")) ? "40" : get_field("margin")); ?>px 0"></div>
